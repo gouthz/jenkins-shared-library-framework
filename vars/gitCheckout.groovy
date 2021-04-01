@@ -1,7 +1,7 @@
 def call(params){
 
       params.WORKSPACE = env.WORKSPACE
-      params.BUILD_NUMBER = env.BUILD_NUMBER
+      params.BUILD_NUMBER = "Goutham is fine"
       params.JOB_NAME = env.JOB_NAME
       params.SSHCREDENTIAL = env.SSHCREDENTIAL
       params.SONAR_URL = env.SONAR_SERVER
