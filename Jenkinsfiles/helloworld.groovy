@@ -1,12 +1,12 @@
 library "dcube-library"
 
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                HelloWorld('testing')
-            }
-        }
-    }
+
+microservicesDevelopmentPipeline {
+
+    PROJECT_KEY         = 'gatewayService'
+    DOCKER_IMAGE        = 'gateway-service-dev'
+    CONFIG_DIR          = 'gateway'
+
+    
 }
+
