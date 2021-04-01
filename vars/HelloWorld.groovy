@@ -17,7 +17,7 @@ def call(Closure body) {
                 steps {
                     script {
                         checkout scm
-                        getEnvVariables(params)
+                        gitCheckout(params)
                         TAG = "phoenix-development-${params.BUILD_NUMBER}"
 
                     }
