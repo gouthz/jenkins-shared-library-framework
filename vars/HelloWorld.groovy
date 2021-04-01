@@ -19,6 +19,7 @@ def call(Closure body) {
                         checkout scm
                         gitCheckout(params)
                         TAG = "phoenix-development-${params.BUILD_NUMBER}"
+                        echo ${params.BUILD_NUMBER}
 
                     }
                 }
