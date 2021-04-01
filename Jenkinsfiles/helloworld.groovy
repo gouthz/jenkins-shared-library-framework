@@ -1,7 +1,7 @@
 library "dcube-library"
 
 
-microservicesDevelopmentPipeline {
+HelloWorld {
 
     PROJECT_KEY         = 'gatewayService'
     DOCKER_IMAGE        = 'gateway-service-dev'
