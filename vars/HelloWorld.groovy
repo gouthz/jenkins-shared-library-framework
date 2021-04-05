@@ -27,7 +27,7 @@ def call(Closure body) {
                                 branch: 'main'
                             )
                         }
-                        ls 
+                        sh 'ls'
 
                     }
                 }
