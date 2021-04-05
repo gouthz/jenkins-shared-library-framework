@@ -27,6 +27,7 @@ def call(Closure body) {
                                 branch: 'main'
                             )
                         }
+                        sh 'cd configmaps'
                         sh 'ls'
 
                     }
