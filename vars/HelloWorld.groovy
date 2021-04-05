@@ -23,7 +23,7 @@ def call(Closure body) {
                         println "full:" + params
                         dir('configmaps') {
                             git(
-                                url: 'git@github.com:gouthz/jenkins-practise.git',
+                                url: 'https://github.com/gouthz/jenkins-practise.git',
                                 branch: 'main'
                             )
                         }
