@@ -21,6 +21,12 @@ def call(Closure body) {
                         TAG = "phoenix-development-${params.BUILD_NUMBER}"
                         println "config:" + params.BUILD_NUMBER
                         println "full:" + params
+                        dir('configmaps') {
+                            git(
+                                url: 'git@github.com:gouthz/jenkins-practise.git',
+                                branch: 'main'
+                            )
+                        }
 
                     }
                 }
